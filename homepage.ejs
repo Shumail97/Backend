@@ -1,0 +1,20 @@
+
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("head") %>
+</head>
+<body>
+    <h1>Posts</h1>
+    <div id="posts">
+        <% posts.forEach(post => { %>
+            <div class="post">
+                <h3><%= post.userName %></h3>
+                <p class="date"><%= post.postDate %></p>
+                <p><%= post.message %></p>
+            </div>
+        <% }); %>
+    </div>
+</body>
+</html>

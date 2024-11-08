@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("head") %>
+</head>
+<body>
+    <%- include("header") %>
+    <h3>About<%- userName %></h3>
+    <%- if(isAdmin) { %>
+        <h1><%= email %></h1>
+        <% } else { %>
+        <h1>sorry you are not an admin <%-include("notFound")%></h1>
+    
+</body>
+</html>
